@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<center><h1>Zodíaco</h1>
+<input type="text" id="signos">
+<button onclick="escolhaSigno()"> Buscar </button>
+<div id="frase"> </div></center>
+
+
+
+
+
+<script>
+   function escolhaSigno(){
+    var texto
+    var signos = document.getElementById("signos").value;
+
+    switch(signos) {
+    case "Áries":
+    texto = "Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes.";
+    break
+
+    case "Touro":
+    texto = "Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!";
+    break
+
+    case "Gêmeos":
+    texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles.";
+    break
+
+
+    case "Câncer":
+    texto = "Dóceis, gentis, românticos e carinhosos, são pessoas que se preocupam profundamente com seus amigos, família e lar.";
+    break
+
+    case "Leão":
+    texto = "Com enorme coração e de sangue quente, os leoninos exalam carisma e generosidade. São pessoas que se sentem responsáveis pelas pessoas que estão ao seu redor e defende-as como um verdadeiro leão. Os nativos do signo podem agir de maneira explosiva e impulsiva, mas sabem perdoar e dificilmente guardam rancor.";
+    break
+
+    case "Virgem":
+    texto = "As pessoas do signo de Virgem costumam ser inteligentes, detalhistas, metódicas, organizadas, discretas e perfeccionistas.";
+    break
+
+    case "Libra":
+    texto = "Os nativos de Libra são considerados os mais luxuosos e elegantes do zodíaco. Para eles, é como se a vida fosse uma bela e sofisticada obra de arte. Amam a estética das coisas e desfilam elegância por onde passam. Costumam ser pessoas carismáticas, doces, justas, alegres, bem-humoradas e racionais.";
+    break
+
+    case "Escorpião":
+    texto = "Reservados e profundos, os escorpianos têm a intensidade como característica marcante. São pessoas que exalam mistério e poder, e dificilmente deixam-se acessar por completo. Eles vivem no mundo interior das próprias emoções e são extremamente seletivos ao escolher quem poderá adentrar no seu universo.";
+    break
+
+    case "Sagitário":
+    texto = "As pessoas nascidas sob o signo de Sagitário estão sempre abertas a novas experiências e querendo aprender. Mente aberta e intuitiva, possuem uma personalidade inquieta e mutável. O sagitário personalidade é aquela pessoa que gosta de viver e descobrir todas as coisas que o mundo tem a oferecer.";
+    break
+
+    case "Capricórnio":
+    texto = "Obstinados não costumam confiar nos planos feitos por outras pessoas, preferem seguir seus próprios planos. São pessoas pacientes e disciplinadas, pois sabem que a conquista de seus objetivos vem através de muito trabalho e persistência.";
+    break
+
+    case "Aquário":
+    texto = "Inovador, racional, rápido e imprevisível, ele ri da cara das regras e detesta a sensação de estar preso a algo, seja um lugar, um ideal ou uma situação. As pessoas que têm ascendente nesse signo costumam curtir um visual bem inesperado, e quanto mais chocadas as pessoas à sua volta, melhor.";
+    break
+
+    case "Peixes":
+    texto = "Piscianos costumam ter forte intuição e guiam as ações com base nas emoções. Peixes está ligado a diversas virtudes, são compreensivos, compassivos, empáticos e humildes. Por amor ao próximo, são capazes de se doar totalmente a algum objetivo, esquecendo, às vezes, até de si próprios.";
+    break
+
+
+
+
+
+    default:
+    texto = "insira um signo existente";
+
+    }
+
+    document.getElementById("frase").innerHTML = texto;
+
+    
+   }
+</script>
+
+<footer>
+
+<p>Produzido por Luis Filipe &copy; luisfilipealmeidabaz@gmail.com </p>
+
+</footer>
+
+
+
+</body>
+</html>
